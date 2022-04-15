@@ -140,6 +140,10 @@
     width: 300px;
   }
 
+  body {
+    margin: 0;
+  }
+
   div.tooltip:hover span {
     display: block;
   }
@@ -147,6 +151,7 @@
   header {
     height: 15%;
     z-index: 10;
+    width: 100%;
   }
   nav > a {
     text-decoration: none;
@@ -162,7 +167,6 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    width: 100vw;
     height: 100vh;
   }
 
@@ -215,5 +219,11 @@
     grid-column-end: 5;
     -ms-grid-row: 2;
     grid-row: 2;
+  }
+}
+
+@media (min-width: 1500px) {
+  .project_img:hover {
+    width: 800px;
   }
 }
